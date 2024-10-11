@@ -2,10 +2,10 @@
 
 public class Average {
     public static void main(String[] args) {
-        var sum = 0;
-        for(var arg : args) {
-            sum += Long.parseLong(arg);
+        long sum = 0;
+        for(String arg : args) {    //args是字串陣列所以用String
+            sum += Long.parseLong(arg); //字串轉成整數
         }
-        System.out.println("平均：" + (float) sum / args.length);
+        System.out.println("平均：" + (double) sum / args.length); //args.length是字串陣列的長度
     }
 }
