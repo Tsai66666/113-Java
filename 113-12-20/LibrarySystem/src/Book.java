@@ -46,6 +46,6 @@ public class Book implements Borrowable {
 
     @Override
     public String toString() {
-        return "書名: " + title + ". 作者: " + author + ", 狀態: " + (isborrowed ? "已借閱" : "可借閱");
+        return "書名: " + title + ". 作者: " + author + ", 狀態: " + (isborrowed ? "已借出" : "可借閱");
     }
 }
